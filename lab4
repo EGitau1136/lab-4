@@ -1,0 +1,64 @@
+// Name: Edwin Gitau	
+// WSU ID #: Z663U462	
+// Lab #: 5
+// Description: Use of functions to add, substract, multiply and divide values
+
+#include <iostream>
+
+using namespace std;
+
+double addResult(double input1, double input2);
+double substractResult(double input1, double input2);
+double multiplyResult(double input1, double input2);
+double divideResult(double input1, double input2);
+
+
+int main()
+{
+	double input1, input2;
+
+	cout << " Enter value of input one ";
+	cin >> input1;
+	cout << " Enter value of input two ";
+	cin >> input2;
+
+	double  addition =  addResult(input1, input2);
+	double  substraction = substractResult(input1, input2);
+	double multiplication = multiplyResult(input1, input2);
+	double division = divideResult(input1, input2);
+
+
+	cout << "The sum of " << input1 << " and " << input2 << " is " << addition << endl;
+	cout << "The subtraction of " << input1 << " and " << input2 << " is " << substraction << endl;
+	cout << "The multiplication of " << input1 << " and " << input2 << " is " << multiplication << endl;
+	cout << "The division of " << input1 << " and " << input2 << " is " << division << endl;
+
+	return 0;
+}
+double addResult(double input1, double input2)
+{
+	double addResult = input1 + input2;
+
+	return addResult;
+	
+}
+double substractResult(double input1, double input2)
+{
+	double substractResult = input1 - input2;
+
+	return substractResult;
+
+}
+double multiplyResult(double input1, double input2)
+{
+	double multiplyResult = input1 * input2;
+
+	return multiplyResult;
+
+}
+double divideResult(double input1, double input2)
+{
+	int divideResult = input1 / input2;
+
+	return divideResult;
+}
